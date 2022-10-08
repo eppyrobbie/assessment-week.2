@@ -32,6 +32,14 @@
 
 //CODE HERE
 
+let pizza = {
+    name: 'Cheese',
+    price: 4,
+    category: 'Entree',
+    popularity: 2,
+    rating: 2.5,
+    tags: ['kids', 'healthy'],
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +52,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +63,7 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -64,6 +74,9 @@
 
 //CODE HERE
 
+let {price} = pizza
+
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +87,9 @@
 
 //CODE HERE
 
+let {category} = pizza
+
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,6 +104,54 @@
 */
 
 //CODE HERE
+
+let foodArr = []
+    
+    let cheesePizza={
+        name: 'Cheese',
+        price: 4,
+        category: 'Entree',
+        popularity: 2,
+        rating: 2.5,
+        tags: ['kids', 'healthy'],
+    }
+    
+    let pepperoniPizza = {
+        name: 'Pepperoni',
+        price: 5,
+        category: 'Entree',
+        popularity: 3,
+        rating: 3.5,
+        tags: ['kids', 'large'],
+    }
+    
+    let deluxePizza = {
+        name: 'Deluxe',
+        price: 7,
+        category: 'Entree',
+        popularity: 1,
+        rating: 1.5,
+        tags: ['family', 'large', 'special'],
+    }
+    
+    let glutenFreePizza = {
+        name: 'Gluten Free',
+        price: 7,
+        category: 'Entree', 
+        popularity: 6,
+        rating: 6,
+        tags: ['healthy', 'special'],
+    }
+    let vegetarianPizza = {
+        name: 'Vegetarian',
+        price: 5,
+        category: 'Entree', 
+        popularity: 8,
+        rating: 5,
+        tags: ['healthy', 'special'],
+    }
+
+foodArr.push(cheesePizza, pepperoniPizza, deluxePizza, glutenFreePizza, vegetarianPizza)
 
 
 
@@ -105,7 +169,9 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+//function callback()
+
+//const filteredFood = foodArr.filter(callback)
 
 
 
