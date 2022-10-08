@@ -57,7 +57,11 @@ const cart = [
 
 //CODE HERE
 
+function calcFinalPrice (cartTotal, couponValue, tax){
+    console.log(cartTotal +(cartTotal*tax) - couponValue )
+}
 
+calcFinalPrice(11, 2, .06)
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -81,6 +85,10 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+age/ages - knowing the demographic you're reaching is important for menus. If there are families, you'll need kids menus etc. 
+average income - types of ingredients to use and prices set for menu items.
+how often they eat out a month - this is imporant to set expectations and how often they might visit.
+male or female - could help determine menu items, ambiance of restaraunt and target audience
 
 */
 
@@ -90,3 +98,10 @@ const cart = [
 */
 
 //CODE HERE
+
+let newCustomer = {
+    age: 25, 
+    income: 35000,
+    eatingOut: 5,
+    sex: 'male'
+}
