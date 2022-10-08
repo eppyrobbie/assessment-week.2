@@ -23,8 +23,11 @@
 
 //CODE HERE
 
+let greetUser = (username) =>{
+    return `Welcome back, ${username}`
+}
 
-
+//console.log(greetUser('robbie'))
 
 
 //////////////////PROBLEM 2////////////////////
@@ -51,8 +54,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+function canWeDeliver(zipCode){
+    for (let i = 0; i<=deliveryAreaZipCodes.length; i++)
+    if (zipCode === deliveryAreaZipCodes[i] ){
+        console.log ('Youre in our delivery zone!')
+    } else {
+        console.log('Sorry, we cant deliver to that address')
+    }
+}
 
-
+//console.log(canWeDeliver()). I know this isn't technically correct. I can't figure out how to only check one index within the array.
 /* 
     Problem 2 Continued
 
@@ -72,6 +83,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
+function canWeDeliverTwo(zipCode){
+   if (deliveryAreaZipCodes.includes(zipCode) === true){
+    console.log('Youre in our delivery zone!')
+   } else {
+    console.log('Sorry, we cant deliver to that address')
+   }
+}
+
+//console.log(canWeDeliverTwo(85205))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -93,7 +113,7 @@ const deals = [
     }, 
     {
         title: 'Free Kids Meal with 2 Regular Entrees', 
-        desc: '   This deal lasts until the end of March! '
+        desc: '   Deal lasts till the end of March! '
     }
 ]
 
@@ -108,7 +128,13 @@ const deals = [
 
 //CODE HERE
 
+let newObject = {
+    title: '10% off!',
+    desc: 'Applied to your entire order when you spend $30 or more',
+}
 
+deals.splice(0, 1, newObject)
+//console.log(deals) I'm not sure what the replace method is. Whenever I did .replace with deals arr, terminals kept saying its not a function
 
 /*
     The restaurant is going to continue its
@@ -124,3 +150,12 @@ const deals = [
 */
 
 //CODE HERE
+
+let newObject2 = {
+    title: 'Free Kids Meal with 2 Regular Entrees',
+    desc: 'Deal lasts till the end of April!',
+}
+
+deals.splice(1, 1, newObject2)
+
+//console.log(deals)
