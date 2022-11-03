@@ -57,13 +57,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 function canWeDeliver(zipCode){
     for (let i = 0; i<=deliveryAreaZipCodes.length; i++)
     if (zipCode === deliveryAreaZipCodes[i] ){
-        console.log ('Youre in our delivery zone!')
+        return ('Youre in our delivery zone!')
     } else {
-        console.log('Sorry, we cant deliver to that address')
+        return ('Sorry, we cant deliver to that address')
     }
 }
 
-//console.log(canWeDeliver()). I know this isn't technically correct. I can't figure out how to only check one index within the array.
+//console.log(canWeDeliver(85205))
+//console.log(canWeDeliver(84058))
 /* 
     Problem 2 Continued
 
@@ -85,9 +86,9 @@ function canWeDeliver(zipCode){
 
 function canWeDeliverTwo(zipCode){
    if (deliveryAreaZipCodes.includes(zipCode) === true){
-    console.log('Youre in our delivery zone!')
+    return ('Youre in our delivery zone!')
    } else {
-    console.log('Sorry, we cant deliver to that address')
+    return ('Sorry, we cant deliver to that address')
    }
 }
 

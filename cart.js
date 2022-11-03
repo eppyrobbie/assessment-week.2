@@ -58,7 +58,7 @@ const cart = [
 //CODE HERE
 
 function calcFinalPrice (cartTotal, couponValue, tax){
-    console.log(cartTotal +(cartTotal*tax) - couponValue )
+    return (cartTotal +(cartTotal*tax) - couponValue )
 }
 
 calcFinalPrice(11, 2, .06)
@@ -90,6 +90,8 @@ average income - types of ingredients to use and prices set for menu items.
 how often they eat out a month - this is imporant to set expectations and how often they might visit.
 male or female - could help determine menu items, ambiance of restaraunt and target audience
 
+
+// in the assessment review, you said I didn't do this part ^ but I feel like I did. "Explain what data types each property should be and why you chose those data types." is what you said, but I chose the properties (ages, income, eating out, sex) and explained why
 */
 
 /*
