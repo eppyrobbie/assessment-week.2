@@ -63,8 +63,8 @@ function canWeDeliver(zipCode){
     }
 }
 
-//console.log(canWeDeliver(85205))
-//console.log(canWeDeliver(84058))
+// console.log(canWeDeliver(85205))
+// console.log(canWeDeliver(84058))
 /* 
     Problem 2 Continued
 
@@ -92,7 +92,8 @@ function canWeDeliverTwo(zipCode){
    }
 }
 
-//console.log(canWeDeliverTwo(85205))
+// console.log(canWeDeliverTwo(85205))
+// console.log(canWeDeliverTwo(84606))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -129,13 +130,10 @@ const deals = [
 
 //CODE HERE
 
-let newObject = {
-    title: '10% off!',
-    desc: 'Applied to your entire order when you spend $30 or more',
-}
+deals[0].title = deals[0].title.replace('15% Off!', '10% Off!')
 
-deals.splice(0, 1, newObject)
-//console.log(deals) I'm not sure what the replace method is. Whenever I did .replace with deals arr, terminals kept saying its not a function
+//console.log(deals)
+
 
 /*
     The restaurant is going to continue its
@@ -152,11 +150,6 @@ deals.splice(0, 1, newObject)
 
 //CODE HERE
 
-let newObject2 = {
-    title: 'Free Kids Meal with 2 Regular Entrees',
-    desc: 'Deal lasts till the end of April!',
-}
-
-deals.splice(1, 1, newObject2)
+deals[1].desc = deals[1].desc.replace('   Deal lasts till the end of March! ', 'Deal lasts till the end of April!')
 
 //console.log(deals)

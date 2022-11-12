@@ -52,7 +52,7 @@ let pizza = {
 
 //CODE HERE
 
-console.log(pizza.popularity)
+//console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -63,7 +63,7 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
-console.log(pizza.tags[1])
+//console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -76,7 +76,7 @@ console.log(pizza.tags[1])
 
 let {price} = pizza
 
-console.log(price)
+//console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -89,7 +89,7 @@ console.log(price)
 
 let {category} = pizza
 
-console.log(category)
+//console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -169,9 +169,9 @@ foodArr.push(cheesePizza, pepperoniPizza, deluxePizza, glutenFreePizza, vegetari
 
 //CODE HERE
 
-//function callback()
+const filteredFood = foodArr.filter((foodObj) => foodObj.tags.includes('kids'))
 
-//const filteredFood = foodArr.filter(callback)
+//console.log(filteredFood)
 
 
 
@@ -215,7 +215,16 @@ foodArr.push(cheesePizza, pepperoniPizza, deluxePizza, glutenFreePizza, vegetari
 */
 
 //CODE HERE
-
+function filterByProperty(property, number, type) {
+    let filteredArray = foodArr.filter((foodObj) => {
+        if (type === 'above') {
+            return foodObj[property] > number
+        } else if (type === 'below') {
+            return foodObj [property] < number
+        }
+    })
+    return filteredArray
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -225,3 +234,5 @@ foodArr.push(cheesePizza, pepperoniPizza, deluxePizza, glutenFreePizza, vegetari
 */
 
 //CODE HERE
+
+//console.log(filterByProperty('rating', 3, 'above'))
